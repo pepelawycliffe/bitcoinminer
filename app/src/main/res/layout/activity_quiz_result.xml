@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.QuizResultActivity"
+    android:background="@color/grey_5">
+
+    <include layout="@layout/action_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/actionBarSize"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_marginBottom="@dimen/actionBarSize">
+
+        <ImageView
+            android:id="@+id/resultImg"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_results"
+            android:padding="17dp"
+            app:tint="@color/colorAccent" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_xlarge"
+            android:layout_weight="0.005"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.1"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_check_circle"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:layout_marginEnd="@dimen/spacing_large"/>
+
+            <TextView
+                android:id="@+id/right_answers_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Right Answers  "
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:fontFamily="@font/myfont1"
+                android:layout_marginStart="@dimen/spacing_xlarge"
+                android:layout_marginEnd="@dimen/spacing_xxlarge"/>
+
+            <TextView
+                android:id="@+id/txt_score"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:fontFamily="@font/myfont1"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_weight="0.01"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.1"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/CupImg"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:layout_marginEnd="@dimen/spacing_large"
+                app:srcCompat="@drawable/ic_add_circle_outline"/>
+
+            <TextView
+                android:id="@+id/best_score_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Mocions earned"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:fontFamily="@font/myfont1"
+                android:layout_marginStart="@dimen/spacing_xlarge"
+                android:layout_marginEnd="@dimen/spacing_xxlarge"/>
+
+            <TextView
+                android:id="@+id/txt_mocions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:fontFamily="@font/myfont1"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"
+            android:layout_weight="0.01"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.1"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/spacing_large"
+                android:layout_marginEnd="@dimen/spacing_large"
+                app:srcCompat="@drawable/ic_account_balance"/>
+
+            <TextView
+                android:id="@+id/mocions_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Mocions Balance"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="@font/myfont1"
+                android:layout_marginStart="@dimen/spacing_xlarge"
+                android:layout_marginEnd="@dimen/spacing_xxlarge"/>
+
+            <TextView
+                android:id="@+id/txt_mocionsNew"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:fontFamily="@font/myfont1"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_large"
+            android:layout_weight="0.01"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play Again"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/myfont1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"
+            android:background="@color/colorAccent"
+            android:padding="5dp"
+            android:layout_weight="0.02"
+            android:onClick="PlayAgainClick"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_medium"
+            android:layout_weight="0.01"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Home Page"
+            android:textSize="19sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/myfont1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"
+            android:padding="5dp"
+            android:background="@color/colorAccent"
+            android:layout_weight="0.02"
+            android:onClick="BackClick"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_medium"
+            android:layout_weight="0.25"/>
+
+    </LinearLayout>
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admob_banner_id"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+    </com.google.android.gms.ads.AdView>
+
+    <com.applovin.mediation.ads.MaxAdView xmlns:maxads="http://schemas.applovin.com/android/1.0"
+        android:id="@+id/MaxAdView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        maxads:adUnitId="YOUR_AD_UNIT_ID" />
+
+</RelativeLayout>

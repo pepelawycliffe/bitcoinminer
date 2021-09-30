@@ -1,0 +1,113 @@
+<resources>
+    <string name="app_name">Bitcoin Miner</string>
+
+    <string name="Loading">Loading..</string>
+
+    <!-- Toolbar -->
+    <string name="toolbar_main">Bitcoin Miner</string>
+    <string name="toolbar_login">Login</string>
+    <string name="toolbar_signup">Sign up</string>
+    <string name="toolbar_profile">My Profile</string>
+    <string name="toolbar_start">Start Earn</string>
+    <string name="toolbar_feedback">Feedback</string>
+    <string name="toolbar_about">About</string>
+    <string name="toolbar_payment">Payment</string>
+    <string name="toolbar_howItWorks">How is Works</string>
+    <string name="toolbar_proof">Payments Proof</string>
+    <string name="toolbar_math_quiz">Math Quiz</string>
+    <string name="toolbar_result">Result</string>
+
+    <!-- Main Activity -->
+    <string name="Main_Welcome">Welcome, </string>
+    <string name="Main_Mocoins">Your Points</string>
+    <string name="Main_Zero">0</string>
+    <string name="Main_Start">Start Earn</string>
+    <string name="Main_MakeMoney">to make Bitcion</string>
+    <string name="Main_Proof">Payments Proof</string>
+    <string name="Main_subProof">Proof of payment to users</string>
+    <string name="Main_Payments">Payment</string>
+    <string name="Main_subPayments">send payment request</string>
+    <string name="Main_Feedback">Feedback</string>
+    <string name="Main_subFeedback">tell us your opinion</string>
+    <string name="Main_Share">Share with Friend</string>
+    <string name="Main_subShare">to support us</string>
+    <string name="Main_HowItWorks">How it Works</string>
+    <string name="Main_subHowItWorks">FAQ</string>
+    <string name="Main_About">About App</string>
+    <string name="Main_AppInfo">info about app</string>
+
+    <!-- Profile -->
+    <string name="proof_username">Name</string>
+    <string name="proof_amount">Amount</string>
+
+    <!-- Profile -->
+    <string name="profile_myProfile">MY PROFILE</string>
+    <string name="profile_others">OTHERS</string>
+    <string name="profile_name">Name</string>
+    <string name="profile_email">Email</string>
+    <string name="profile_contact">Contact Us</string>
+    <string name="profile_report">Report a problem</string>
+
+    <!-- About -->
+    <string name="about_app_name">Bitcoin Miner App</string>
+    <string name="about_website">Our Website</string>
+    <string name="about_terms">Terms and Conditions</string>
+    <string name="about_Company">Company</string>
+    <string name="about_Inc">Bitcoin Miner Inc.</string>
+    <string name="about_Specialist">Android App Specialist</string>
+    <string name="about_location">Istanbul, Turkey</string>
+
+    <!-- Feedback -->
+    <string name="feedback_title">Title*</string>
+    <string name="feedback_message">Your Feedback Message*</string>
+
+    <!-- Splash -->
+    <string name="splash_try_again">Try Again</string>
+    <string name="splash_no_internet">No Internet Connection</string>
+
+    <!-- Sign up -->
+    <string name="signup_agree">By Sign up you agree to the Privacy Policy, Terms and Conditions.</string>
+
+    <!-- Payment -->
+    <string name="payment_alert">* You need to have account in Coinbase to use it in cashout.</string>
+    <string name="payment_mas">Please enter the email address that you would like to use for Coinbase:</string>
+    <string name="payment_req">You need to have at least 10000 points to cash out.</string>
+    <string name="payment_request">Payment Request</string>
+    <string name="payment_convert">10000 Points = 0.000001 Bitcoin</string>
+
+    <!-- Help page -->
+    <string name="Faq_title_1">How do I earn Bitcoin?</string>
+    <string name="Faq_text_1">Simply all you have to do is watch the advertising websites for a short time and then the points will be added.</string>
+
+    <string name="Faq_title_2">What is a Points?</string>
+    <string name="Faq_text_2">The points you earn are converted into Bitcoin upon withdrawal.</string>
+    <string name="Faq_title_3">When can I withdraw?</string>
+    <string name="Faq_text_3">You can withdraw to your Bitcoin wallet when you have completed the minimum withdrawal amount.</string>
+
+    <string name="Faq_title_4">minimum to withdraw?</string>
+    <string name="Faq_text_4">The minimum withdrawal amount is 10000 points</string>
+
+    <string name="Faq_title_5">Fraud and manipulation</string>
+    <string name="Faq_text_5">Don\'t worry, we have all kinds of protection against cheaters and manipulators, and anyone who tries or attempts to do so will be banned.</string>
+
+    <string name="Faq_title_6">do you have another question?</string>
+    <string name="Faq_text_6">Do not hesitate to contact us.</string>
+
+    <string name="Question">Question</string>
+
+
+    <!-- Share App Text -->
+    <string name="Share_Text">Best App to Make Bitcoin From Your Phone Download it Now: \n</string>
+
+
+    <!-- Strings of Admob Ads -->
+
+
+    <string name="admob_app_id">ca-app-pub-5141365365473076~1467241406</string>
+    <string name="admob_banner_id">ca-app-pub-5141365365473076/9249544414</string>
+    <string name="admob_interstitial_id">ca-app-pub-5141365365473076/8910277847</string>
+
+    <!-- Strings of AppLovin Ads -->
+<!--    <string name="appLovin_interstitial_id">123456789</string>-->
+
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MathQuizActivity"
+    android:background="@color/grey_5">
+
+    <include layout="@layout/action_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/actionBarSize"
+        android:layout_marginBottom="100dp">
+
+        <TextView
+            android:id="@+id/NumberOf_Question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question: 1"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="@font/myfont1"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="3dp"
+            android:layout_weight="0.06"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="2dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:id="@+id/Question_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Here the Question one"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/myfont1"
+                android:gravity="center"
+                android:elevation="4dp"
+                android:padding="15dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_medium"/>
+
+        <Button
+            android:id="@+id/btn_Answer_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Answer One"
+            android:textSize="17sp"
+            android:fontFamily="@font/myfont1"
+            android:textColor="@android:color/black"
+            android:textAllCaps="false"
+            android:padding="5dp"
+            android:background="@color/white"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.3"/>
+
+        <Button
+            android:id="@+id/btn_Answer_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Answer Two"
+            android:textSize="17sp"
+            android:fontFamily="@font/myfont1"
+            android:textColor="@android:color/black"
+            android:textAllCaps="false"
+            android:padding="5dp"
+            android:background="@color/white"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.3"/>
+
+        <Button
+            android:id="@+id/btn_Answer_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Answer Three"
+            android:textSize="17sp"
+            android:fontFamily="@font/myfont1"
+            android:textColor="@android:color/black"
+            android:textAllCaps="false"
+            android:padding="5dp"
+            android:background="@color/white"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.3"/>
+
+        <Button
+            android:id="@+id/btn_Answer_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="0.3"
+            android:fontFamily="@font/myfont1"
+            android:padding="5dp"
+            android:text="Answer Four"
+            android:textAllCaps="false"
+            android:background="@color/white"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15" />
+
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admob_banner_id"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+    </com.google.android.gms.ads.AdView>
+
+    <com.applovin.mediation.ads.MaxAdView xmlns:maxads="http://schemas.applovin.com/android/1.0"
+        android:id="@+id/MaxAdView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        maxads:adUnitId="YOUR_AD_UNIT_ID" />
+
+</RelativeLayout>

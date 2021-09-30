@@ -1,0 +1,2 @@
+rootProject.name = "Bitcoin Miner Codecanyon"
+include ':app'
